@@ -36,15 +36,16 @@ namespace Lab1
 
                 Console.Write("Would the user like to find the measurements of another room (y/n)?: ");
 
+                //repeat prompt for a valid answer
                 while (validAnswer)
                 {
                     string repeatPrompt = Console.ReadLine();
-                    if (repeatPrompt == "y" || repeatPrompt == "Y")
+                    if (repeatPrompt == "y" || repeatPrompt == "Y" || repeatPrompt == "yes")
                     {
                         repeat = true;
                         validAnswer = false;
                     }
-                    else if (repeatPrompt == "n" || repeatPrompt == "N")
+                    else if (repeatPrompt == "n" || repeatPrompt == "N" || repeatPrompt == "no")
                     {
                         Console.WriteLine("Okay exiting the program now.");
                         repeat = false;
@@ -58,7 +59,7 @@ namespace Lab1
                 }
             }
         }
-        private static double ValidationOfDec()
+        private static double ValidationOfDec() //validates a double was entered for the dimension
         {
             while (true)
             {
@@ -71,7 +72,7 @@ namespace Lab1
                 }
                 else
                 {
-                    Console.WriteLine("Please enter a valid measurement");
+                    Console.Write("Please enter a valid measurement: ");
                 }
 
             }
