@@ -26,7 +26,7 @@ namespace Lab1
                 double areaOfClassroom = widthClass * lengthClass;
                 double perimeterOfClassroom = 2 * widthClass + 2 * lengthClass;
                 double volumeOfClassroom = heightClass * widthClass * lengthClass;
-
+                //list the calculations
                 Console.WriteLine("The area of the room is: " + areaOfClassroom);
                 Console.WriteLine("The perimeter of the room is: " + perimeterOfClassroom);
                 Console.WriteLine("The volume of the room is: " + volumeOfClassroom);
